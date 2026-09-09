@@ -1,101 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Registration</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
+    <header class="bg-dark text-white text-center py-5">
+
         <h1>Alumni Management System</h1>
-        <p>Create your alumni account</p>
+
+        <p class="lead">
+            Create your alumni account
+        </p>
+
     </header>
 
+
     <!-- Navigation -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
-        <a href="alumni.html">Alumni</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
 
-    <!-- Registration Form -->
-    <main class="form-container">
+        <div class="container">
 
-        <form class="form-box">
+            <a class="navbar-brand" href="index.html">
+                Alumni System
+            </a>
 
-            <h2>Registration Form</h2>
-
-            <label for="name">Full Name</label>
-            <input
-                type="text"
-                id="name"
-                placeholder="Enter your full name"
-                required
+            <button
+                class="navbar-toggler"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
             >
 
-            <label for="email">Email</label>
-            <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                required
-            >
+                <span class="navbar-toggler-icon"></span>
 
-            <label for="password">Password</label>
-            <input
-                type="password"
-                id="password"
-                placeholder="Create a password"
-                required
-            >
-
-            <label for="degree">Degree</label>
-            <select id="degree">
-                <option value="">Select Degree</option>
-                <option value="bs">BS Computer Science</option>
-                <option value="bsse">BS Software Engineering</option>
-                <option value="bba">BBA</option>
-                <option value="be">BE</option>
-                <option value="ms">MS</option>
-            </select>
-
-            <label for="year">Graduation Year</label>
-            <input
-                type="number"
-                id="year"
-                placeholder="2026"
-            >
-
-            <label for="profession">Profession</label>
-            <input
-                type="text"
-                id="profession"
-                placeholder="Enter your profession"
-            >
-
-            <button type="submit" class="btn">
-                Register
             </button>
 
-            <p>
-                Already have an account?
-                <a href="login.html">Login here</a>
-            </p>
 
-        </form>
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            Profile
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="alumni.html">
+                            Alumni
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            Login
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Registration Form -->
+    <main class="container my-5">
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8 col-lg-6">
+
+                <div class="card shadow">
+
+                    <div class="card-body p-4">
+
+                        <h2 class="text-center mb-4">
+                            Registration Form
+                        </h2>
+
+
+                        <form>
+
+                            <!-- Name -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="name"
+                                    class="form-label">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    class="form-control"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="email"
+                                    class="form-label">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Password -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="password"
+                                    class="form-label">
+                                    Password
+                                </label>
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    class="form-control"
+                                    placeholder="Create a password"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Degree -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="degree"
+                                    class="form-label">
+                                    Degree
+                                </label>
+
+                                <select
+                                    id="degree"
+                                    class="form-select"
+                                >
+
+                                    <option>
+                                        Select Degree
+                                    </option>
+
+                                    <option>
+                                        BS Computer Science
+                                    </option>
+
+                                    <option>
+                                        BS Software Engineering
+                                    </option>
+
+                                    <option>
+                                        BBA
+                                    </option>
+
+                                    <option>
+                                        BE
+                                    </option>
+
+                                    <option>
+                                        MS
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- Graduation Year -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="year"
+                                    class="form-label">
+                                    Graduation Year
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="year"
+                                    class="form-control"
+                                    placeholder="2026"
+                                >
+
+                            </div>
+
+
+                            <!-- Profession -->
+                            <div class="mb-3">
+
+                                <label
+                                    for="profession"
+                                    class="form-label">
+                                    Profession
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profession"
+                                    class="form-control"
+                                    placeholder="Enter your profession"
+                                >
+
+                            </div>
+
+
+                            <!-- Button -->
+                            <div class="d-grid">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-success"
+                                >
+                                    Register
+                                </button>
+
+                            </div>
+
+
+                            <p class="text-center mt-3">
+
+                                Already have an account?
+
+                                <a href="login.html">
+                                    Login here
+                                </a>
+
+                            </p>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </main>
 
+
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Alumni Management System. All Rights Reserved.</p>
+    <footer class="bg-dark text-white text-center py-4">
+
+        <p class="mb-0">
+            &copy; 2026 Alumni Management System.
+            All Rights Reserved.
+        </p>
+
     </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 </html>
