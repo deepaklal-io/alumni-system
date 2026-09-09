@@ -3,20 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Registeration Page</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <h1>This is Register page</h1>
-     <form action="action.php">
-        Name <input type="text", placeholder="Enter Name">
-        <br>
-        Email <input type="text", placeholder="Enter email">
-        <br>
-        Password <input type="password", placeholder="Enter Password">
-        <br>
-        <button>Register</button>
-     </form>
-     <p>if you have already an account</p>
-    <a href="login.html">Login here</a>
+
+    <!-- Header -->
+    <header>
+        <h1>Alumni Management System</h1>
+        <p>Create your alumni account</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <!-- Registration Form -->
+    <main class="form-container">
+
+        <form class="form-box">
+
+            <h2>Registration Form</h2>
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Create a password"
+                required
+            >
+
+            <label for="degree">Degree</label>
+            <select id="degree">
+                <option value="">Select Degree</option>
+                <option value="bs">BS Computer Science</option>
+                <option value="bsse">BS Software Engineering</option>
+                <option value="bba">BBA</option>
+                <option value="be">BE</option>
+                <option value="ms">MS</option>
+            </select>
+
+            <label for="year">Graduation Year</label>
+            <input
+                type="number"
+                id="year"
+                placeholder="2026"
+            >
+
+            <label for="profession">Profession</label>
+            <input
+                type="text"
+                id="profession"
+                placeholder="Enter your profession"
+            >
+
+            <button type="submit" class="btn">
+                Register
+            </button>
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login here</a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alumni Management System. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>

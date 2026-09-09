@@ -3,18 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-     <h1>This is Login page</h1>
-     <form action="action.php">
-        Email <input type="text", placeholder="Enter email">
-        <br>
-        Password <input type="password", placeholder="Enter Password">
-        <br>
-        <button>Login</button>
-     </form>
-     <p>if you havent register here</p>
-     <a href="register.html">Register here</a>
+
+    <!-- Header -->
+    <header>
+        <h1>Alumni Management System</h1>
+        <p>Login to your account</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+    </nav>
+
+    <!-- Login Form -->
+    <main class="form-container">
+
+        <form class="form-box">
+
+            <h2>Login</h2>
+
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit" class="btn">
+                Login
+            </button>
+
+            <p>
+                Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alumni Management System. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
