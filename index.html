@@ -3,91 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumni Management System</title>
+    <title>Alumni Registration</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="container">
+    <div class="form-card">
+        <div class="header">
+            <h1>Alumni Registration</h1>
+            <p>Join our Alumni Community</p>
+        </div>
 
-    <header class="site-header">
-        <h1>Alumni Management System</h1>
-        <p>Connecting Alumni, Students and University</p>
-    </header>
+        <form action="register.php" method="POST">
 
-    <nav class="navbar">
-        <div class="logo">AlumniConnect</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Dashboard</a></li>
-            <li><a href="alumni.html">Alumni</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="profile.html">Profile</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </nav>
+            <h2>Personal Information</h2>
 
-    <main>
-
-        <section class="welcome-section card-surface">
-            <h2>Welcome Back!</h2>
-            <p>Manage your alumni network from one place.</p>
-        </section>
-
-        <section class="stats">
-            <div class="stat-card card-surface">
-                <h3>Total Alumni</h3>
-                <p>1,250</p>
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name"
+                       placeholder="Enter your full name" required>
             </div>
-            <div class="stat-card card-surface">
-                <h3>Events</h3>
-                <p>25</p>
-            </div>
-            <div class="stat-card card-surface">
-                <h3>Jobs Posted</h3>
-                <p>87</p>
-            </div>
-            <div class="stat-card card-surface">
-                <h3>Active Members</h3>
-                <p>640</p>
-            </div>
-        </section>
 
-        <section class="directory card-surface">
-            <div class="section-heading">
-                <h2>Recent Alumni</h2>
-                <a href="alumni.html" class="btn">View All</a>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email"
+                       placeholder="alumni@example.com" required>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Batch</th>
-                        <th>Department</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Ali Khan</td>
-                        <td>2022</td>
-                        <td>Computer Science</td>
-                    </tr>
-                    <tr>
-                        <td>Ahmed Raza</td>
-                        <td>2023</td>
-                        <td>Software Engineering</td>
-                    </tr>
-                    <tr>
-                        <td>Sara Ahmed</td>
-                        <td>2021</td>
-                        <td>Information Technology</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
 
-    </main>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone"
+                       placeholder="03XXXXXXXXX" required>
+            </div>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Alumni Management System. All Rights Reserved.</p>
-    </footer>
+            <div class="form-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
 
+            <div class="form-group">
+                <label for="date_of_birth">Date of Birth</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+            </div>
+
+            <h2>Academic Information</h2>
+
+            <div class="form-group">
+                <label for="student_id">Student ID / Registration No.</label>
+                <input type="text" id="student_id" name="student_id"
+                       placeholder="Enter student ID" required>
+            </div>
+
+            <div class="form-group">
+                <label for="degree">Degree / Program</label>
+                <select id="degree" name="degree" required>
+                    <option value="">Select Degree</option>
+                    <option>BS Computer Science</option>
+                    <option>BS Software Engineering</option>
+                    <option>BS Information Technology</option>
+                    <option>BS Artificial Intelligence</option>
+                    <option>MS Computer Science</option>
+                    <option>MBA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option>Computer Science</option>
+                    <option>Software Engineering</option>
+                    <option>Information Technology</option>
+                    <option>Business Administration</option>
+                    <option>Electrical Engineering</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="graduation_year">Graduation Year</label>
+                <select id="graduation_year" name="graduation_year" required>
+                    <option value="">Select Year</option>
+                    <option>2026</option><option>2025</option>
+                    <option>2024</option><option>2023</option>
+                    <option>2022</option><option>2021</option>
+                    <option>2020</option><option>2019</option>
+                    <option>2018</option><option>2017</option>
+                    <option>2016</option><option>2015</option>
+                </select>
+            </div>
+
+            <h2>Employment Information</h2>
+
+            <div class="form-group">
+                <label for="current_job">Current Job / Designation</label>
+                <input type="text" id="current_job" name="current_job"
+                       placeholder="e.g. Software Engineer">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Organization / Company</label>
+                <input type="text" id="company" name="company"
+                       placeholder="Enter organization name">
+            </div>
+
+            <h2>Current Address</h2>
+
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city"
+                       placeholder="Enter city" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" value="Pakistan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Complete Address</label>
+                <textarea id="address" name="address" rows="4"
+                          placeholder="Enter current address"></textarea>
+            </div>
+
+            <h2>Account Information</h2>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Create a password" required>
+            </div>
+
+            <button type="submit">Register as Alumni</button>
+
+        </form>
+    </div>
+</div>
 </body>
 </html>
