@@ -1,243 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Alumni List</title>
-
-    <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Directory | Alumni Management System</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- Header -->
-    <header class="bg-dark text-white text-center py-5">
-
+    <header class="site-header">
         <h1>Alumni Management System</h1>
-
-        <p class="lead">
-            Our Alumni
-        </p>
-
+        <p>Our Alumni Directory</p>
     </header>
 
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
-
-        <div class="container">
-
-            <a class="navbar-brand" href="index.html">
-                Alumni System
-            </a>
-
-            <button
-                class="navbar-toggler"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-            >
-
-                <span class="navbar-toggler-icon"></span>
-
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile.html">
-                            Profile
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="alumni.html">
-                            Alumni
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="login.html">
-                            Login
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="register.html">
-                            Register
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
+    <nav class="navbar">
+        <div class="logo">AlumniConnect</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="alumni.html" class="active">Alumni</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
     </nav>
 
+    <main>
 
-    <!-- Alumni Table -->
-    <main class="container my-5">
+        <section class="directory card-surface">
+            <h1>Alumni Directory</h1>
 
-        <h2 class="text-center mb-4">
-            Alumni List
-        </h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search alumni...">
+                <button>Search</button>
+            </div>
 
-
-        <div class="table-responsive shadow">
-
-            <table class="table table-striped table-hover table-bordered mb-0">
-
-                <thead class="table-dark">
-
+            <table>
+                <thead>
                     <tr>
-
-                        <th>ID</th>
-
                         <th>Name</th>
-
-                        <th>Degree</th>
-
-                        <th>Graduation Year</th>
-
+                        <th>Batch</th>
+                        <th>Department</th>
                         <th>Profession</th>
-
                         <th>Location</th>
-
                     </tr>
-
                 </thead>
-
-
                 <tbody>
-
                     <tr>
-
-                        <td>01</td>
-
                         <td>Ali Khan</td>
-
-                        <td>BSCS</td>
-
                         <td>2022</td>
-
+                        <td>Computer Science</td>
                         <td>Software Engineer</td>
-
                         <td>Karachi</td>
-
                     </tr>
-
-
                     <tr>
-
-                        <td>02</td>
-
                         <td>Ahmed Raza</td>
-
-                        <td>BSSE</td>
-
                         <td>2023</td>
-
+                        <td>Software Engineering</td>
                         <td>Web Developer</td>
-
                         <td>Lahore</td>
-
                     </tr>
-
-
                     <tr>
-
-                        <td>03</td>
-
                         <td>Sara Ahmed</td>
-
-                        <td>BBA</td>
-
                         <td>2021</td>
-
+                        <td>Information Technology</td>
                         <td>Business Analyst</td>
-
                         <td>Islamabad</td>
-
                     </tr>
-
-
                     <tr>
-
-                        <td>04</td>
-
                         <td>Usman Ali</td>
-
-                        <td>BSCS</td>
-
                         <td>2024</td>
-
+                        <td>Computer Science</td>
                         <td>Data Scientist</td>
-
                         <td>Sukkur</td>
-
                     </tr>
-
-
                     <tr>
-
-                        <td>05</td>
-
                         <td>Ayesha Khan</td>
-
-                        <td>MSCS</td>
-
                         <td>2025</td>
-
+                        <td>Computer Science</td>
                         <td>AI Engineer</td>
-
                         <td>Hyderabad</td>
-
                     </tr>
-
                 </tbody>
-
             </table>
-
-        </div>
+        </section>
 
     </main>
 
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-
-        <p class="mb-0">
-            &copy; 2026 Alumni Management System.
-            All Rights Reserved.
-        </p>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 Alumni Management System. All Rights Reserved.</p>
     </footer>
-
-
-    <!-- Bootstrap JS -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
 
 </body>
 </html>
